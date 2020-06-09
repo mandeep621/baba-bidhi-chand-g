@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="babag.css">
+    <title>Document</title>
+    <script>
+      let a;
+      let date;
+      let time;
+      const options ={weekday :'long',year :'numeric',month :'long',day :'numeric'};
+      setInterval(() => {
+          a=new Date();
+          date=a.toLocaleDateString();
+           time=a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+           document.getElementById('time').innerHTML = time  +  "<br>"  +  date;
+      }, 1000);
+  </script>
+    
+</head>
+<body>
+<header>
+      
+        <h1>Gurduwara Bhath Sahib(Patti)<span>Tarn Taran</span></h1>
+    
+
+    <div class="heading">
+      <nav>
+<ul>
+                 <li><a href="history.html">History Of Gurduwara Sahib</a></li>
+                 
+                  
+
+                  <div class="dropdown">
+                    <li><a href="" class="dropbtn">History Of Baba G</a>
+                    <div class="dropdown-content">
+                      <ul>
+                        <a href="earlylife.html">Early Life</a>
+                    <a href="returnedhorses.html">Returned Horses</a>
+                    <a href="fourbattles.html">Four Battles</a>
+                    <a href="lastdaysbabag.html">Final Days Of Life</a>
+                  </li>
+                    
+                    </ul>
+                  </div>
+                </div>
+              
+               
+              
+              
+
+
+                  
+                  <li><a href="othergurduwaras.html">Other Gurduwaras</a> </li>
+                  <li><a href="sarmayeadal.html">Sampardaye Dal </a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                  
+                </ul>
+                <span id="time" class="set"></span>
+              </ul>
+              </nav>
+              </div>
+           </header>
+    <img src="pic2.jpeg">
+    <h1>Map</h1>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.957962868239!2d74.85456884994892!3d31.27725798135962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391985f17f058b67%3A0xa26b8a0e319d5f0!2sGurdwara%20Baba%20Bidhi%20Chand%20ji!5e0!3m2!1sen!2sde!4v1591097315482!5m2!1sen!2sde" width="1250" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+    </body>
+   
+    <footer><a href="https://www.worldgurudwaras.com/historical-gurudwaras/historical-gurudwaras-in-india/gurudwaras-in-punjab/tarn-taran">|Gurduwars in Punjab|</a>
+    </footer>
+</html>

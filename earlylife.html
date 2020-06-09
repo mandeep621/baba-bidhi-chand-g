@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(walpaper.png);
+        }
+        h1{
+            text-align: center;
+            font-size: xx-large;
+        }
+        p{
+            font-size: x-large;
+        }
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="history.css">
+    <script>
+        let a;
+        let date;
+        let time;
+        const options ={weekday :'long',year :'numeric',month :'long',day :'numeric'};
+        setInterval(() => {
+            a=new Date();
+            date=a.toLocaleDateString();
+             time=a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+             document.getElementById('time').innerHTML = time  +  "<br>"  +  date;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <header class="heading">
+      
+        <h1>Gurduwara Bhath Sahib(Patti)Tarn Taran</h1>
+    
+
+    
+      <nav>
+<ul>
+                 <li><a href="history.html">History Of Gurduwara Sahib</a></li>
+                 
+                  
+
+                  <div class="dropdown">
+                    <li><a href="" class="dropbtn">History Of Baba G</a>
+                    <div class="dropdown-content">
+                      <ul>
+                        <a href="earlylife.html">Early Life</a>
+                    <a href="returnedhorses.html">Returned Horses</a>
+                    <a href="fourbattles.html">Four Battles</a>
+                    <a href="lastdaysbabag.html">Final Days Of Life</a>
+                  </li>
+                    
+                    </ul>
+                  </div>
+                </div>
+              
+               
+              
+              
+
+
+                  
+                  <li><a href="othergurduwaras.html">Other Gurduwaras</a> </li>
+                  <li><a href="sarmayeadal.html">Sampardaye Dal </a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                  
+                </ul>
+                <span id="time" class="right"></span>
+              </ul>
+              </nav>
+              
+          
+    
+    
+    </header>
+
+    <h1>Early Life Of Baba Bidhi Chad G </h1>
+    <p>In Bidhi Chand's early years, before coming in contact of Guru Sahib, Bhai Bidhi Chand was a thief. His maternal village was Sarhali, a village in District Amritsar. The village was notoriously called as 'Sarhali of thieves'. He got this bad habit at the instance of bad elements while being at Sarhali.</p>
+
+        <p>At one incident it so happened that he stole away a few heads of cattle from a village at night. The alert villagers chased him with long sticks and spears so closely that he felt very insecure and terrorized and prayed for his safety and vowed to leave this habit forever. The villagers could not catch him.</p>
+        
+        <p>He came in the company of Bhai Adli, a devout sikh of Guru Arjan Sahib ji. Bhai Adli took him in for a glimpse of the Guru Arjan Sahib Ji. He implored, "I am a thief, please own me and make me your own thief." The guru smiled and asked him to leave this bad habit and live a life in fear of God and in the service of poor; and thereafter he turned to be a devout true sikh of Guru.</p>
+        
+        <p>Bhai Bidhi Chand was a healthy youth, of good height. He became conscious about his soul and his mind became pure. He devoted his life and was always ready to accept any command of the Guru. He learnt the teachings of the guru and put them into practice. Pleased with his devotion and learning, Guru Arjan Sahib Sahib Ji appointed him to preach Sikh way of life and sent him to various villages and far off places for this purpose.</p>
+        <footer><a href="https://www.worldgurudwaras.com/historical-gurudwaras/historical-gurudwaras-in-india/gurudwaras-in-punjab/tarn-taran">|Gurduwars in Punjab|</a>
+            <br>
+            
+            <a href="https://www.instagram.com/dal_baba_bidhi_chand_sahib_ji/?hl=en"><img src="Instagram.jpg" class="short"></a>
+              <a href="https://www.facebook.com/DalBabaBidhiChandSahib/"><img src="facebook.jpg" class="short"></a>
+            </footer>
+    </body>
+</html>

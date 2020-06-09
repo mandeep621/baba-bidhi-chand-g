@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="history.css">
+    <script>
+        let a;
+        let date;
+        let time;
+        const options ={weekday :'long',year :'numeric',month :'long',day :'numeric'};
+        setInterval(() => {
+            a=new Date();
+            date=a.toLocaleDateString();
+             time=a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+             document.getElementById('time').innerHTML = time  +  "<br>"  +  date;
+        }, 1000);
+    </script>
+    <script src="feedback.js"></script>
+    <style>
+        * {    
+  box-sizing: border-box;    
+}  
+        input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}  
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}   
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+
+ 
+    </style>
+</head>
+<body>
+
+  <header class="heading">
+      
+    <h1>Gurduwara Bhath Sahib(Patti)Tarn Taran</h1>
+
+
+
+  <nav>
+<ul>
+             <li><a href="history.html">History Of Gurduwara Sahib</a></li>
+             
+              
+
+              <div class="dropdown">
+                <li><a href="" class="dropbtn">History Of Baba G</a>
+                <div class="dropdown-content">
+                  <ul>
+                    <a href="earlylife.html">Early Life</a>
+                <a href="returnedhorses.html">Returned Horses</a>
+                <a href="fourbattles.html">Four Battles</a>
+                <a href="lastdaysbabag.html">Final Days Of Life</a>
+              </li>
+                
+                </ul>
+              </div>
+            </div>
+          
+           
+          
+          
+
+
+              
+              <li><a href="othergurduwaras.html">Other Gurduwaras</a> </li>
+              <li><a href="sarmayeadal.html">Sampardaye Dal </a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              
+            </ul>
+            <span id="time" class="right"></span>
+          </ul>
+          </nav>
+          
+      
+
+
+</header>
+    <h2>FEEDBACK FORM</h2>
+    <div class="container">
+      <div id="error_message"></div>
+    <form id="myform" onsubmit="return validation()">
+        <label>First Name</label>
+         <input type="text" id="name">
+
+         <label>Last Name</label>
+          <input type="text" id="lname">
+
+          <label>Email Id</label>
+         <input type="email" id="mail">
+        
+             <label>Country</label>
+            <select id="country"> 
+        <option value="none">Select Country</option>
+        <option value="India">India</option>
+        <option value="Deutchland">Deutchland</option>
+        <option value="Italy">Italy</option>
+        <option value="Spain">Spain</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Paris">Paris</option>
+        <option value="Esotonia">Esotonia</option>
+    </select>
+
+    <label>Feedback</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> 
+   
+    
+    <input type="submit" value="submit">
+    
+    </form>
+    </div>
+
+    <footer><a href="https://www.worldgurudwaras.com/historical-gurudwaras/historical-gurudwaras-in-india/gurudwaras-in-punjab/tarn-taran">|Gurduwars in Punjab|</a>
+      <br>
+      
+      <a href="https://www.instagram.com/dal_baba_bidhi_chand_sahib_ji/?hl=en"><img src="Instagram.jpg" class="short"></a>
+        <a href="https://www.facebook.com/DalBabaBidhiChandSahib/"><img src="facebook.jpg" class="short"></a>
+      </footer>
+</body>
+</html>
